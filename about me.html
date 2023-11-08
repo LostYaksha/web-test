@@ -1,28 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>About me</title>
-
-	<link rel="stylesheet" type="text/css" href="about me.css">
-
-	
-
-
+  <title>About me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+	  <head>
+		<link rel="stylesheet" type="text/css" href="about me.css" media=”screen” />
+	</head>
+    <head>
+ 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	</head>
 </head>
+
 <body>
-	<p> All about me </p>
-	<p> Hello, My name is Rafeh. I am a Web Developer. </p>
-	
-	<ul>
-	    <li>Phone number: xxxx xxx xxxx</li>
-		<li> Linkedin : </li>
-		<li> Email : something@gmail.com</li>
-	</ul>
-	<a href="index.html"> 
-		<h2> Go Home </h2>
-	</a>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">more</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin"> <strong>Who Am I?</strong></h3>
+  <img src="coder.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Coder" width="350" height="350">
+  <h3>I am a developer</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Short Bio</h3>
+			<p>Rafeh is a driven and results-oriented individual with a passion for web development and a strong foundation in theoretical economics. With a bachelor's degree in theoretical economics and an ongoing pursuit of web development and Python programming skills, Abdolrafe is poised to become a full-stack developer. <br>
+			Possessing a keen eye for detail and a knack for problem-solving, Rafeh excels in translating theoretical concepts into practical web development applications. Adept at leveraging Python's versatility and power, Abdolrafe is proficient in coding, debugging, and maintaining complex web applications.<br>
+			Abdolrafe is a team player who thrives in collaborative environments, fostering strong communication and interpersonal skills. Committed to continuous learning and professional growth, Abdolrafe is eager to expand knowledge and contribute to innovative projects.
+			<br>
+			<br>
+			<strong> Key Skills:</strong>
+			<br>
+			<ul>
+			Web development (HTML, CSS, JavaScript)<br>
+			Python programming<br>
+			Problem-solving and analytical skills<br>
+			Attention to detail and accuracy<br>
+			Teamwork and collaboration</p></p>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>rafeh.wawani@gmail.com</p>
+      <img src="gmail.jpg" class="img-responsive margin" style="width:10%" alt="gmail">
+    </div>
+    <div class="col-sm-4"> 
+      <p>www.linkedin.com/in/rafe-ibra-259a798b</p>
+      <img src="linkedin.jpg" class="img-responsive margin" style="width:10%" alt="linkedin">
+    </div>
+    <div class="col-sm-4"> 
+      <p>0xxx xxx xxxx</p>
+      <img src="phone.jpg" class="img-responsive margin" style="width:10%" alt="phone">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Thanks for visiting my website.</a></p> 
+</footer>
+
 </body>
 </html>
+
+
+
